@@ -1,0 +1,46 @@
+@use '/styles/helpers/' as *;
+
+.new-tools {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: rem(120);
+
+   @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: rem(52);
+   }
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      gap: rem(30);
+      align-items: start;
+
+      @include tablet {
+         align-items: center;
+         padding-inline: rem(36);
+         text-align: center;
+      }
+   }
+
+   &__button {
+      margin-top: rem(30);
+      padding: rem(15) rem(40);
+
+      @include tablet {
+         margin-top: 0;
+      }
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+      @include mobile-s {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+}
