@@ -1,0 +1,54 @@
+@use '/styles/helpers/' as *;
+
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: rem(26);
+   margin-bottom: rem(52);
+   align-items: center;
+
+   @include tablet {
+      margin-top: rem(12);
+      margin-bottom: rem(36);
+   }
+
+   &__logo {
+      max-height: rem(38);
+   }
+
+   &__menu-list {
+      display: flex;
+      flex-direction: row;
+      column-gap: rem(48);
+      align-items: center;
+
+      @include tablet {
+         column-gap: rem(16);
+      }
+
+      @include mobile {
+         display: none;
+      }
+   }
+
+   &__menu-button {
+      background-color: transparent;
+      border: none;
+      padding: 0 0;
+   }
+
+   &__auth-menu-list {
+      display: flex;
+      flex-direction: row;
+      column-gap: rem(40);
+      align-items: center;
+   }
+
+   &__auth-menu-button--transparent {
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+            padding: 0 0;
+   }
+}

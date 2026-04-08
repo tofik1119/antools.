@@ -1,0 +1,45 @@
+@use '/styles/helpers/' as *;
+
+.popular {
+   display: flex;
+   flex-direction: column;
+   gap: rem(90);
+   align-items: center;
+
+   @include tablet {
+      gap: rem(50);
+   }
+
+   @include mobile {
+      gap: rem(32);
+   }
+
+   &__header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: rem(25);
+
+      @include mobile {
+         gap: rem(10);
+      }
+   }
+
+   &__description {
+      line-height: 1.7;
+      font-weight: 500;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: rem(22);
+      row-gap: rem(100);
+
+      @include mobile {
+         display: flex;
+         flex-direction: column;
+         row-gap: rem(24);
+      }
+   }
+}
