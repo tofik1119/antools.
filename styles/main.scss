@@ -5,13 +5,14 @@
 @use './globals';
 
 @use './blocks/button';
-@use './blocks/header';
+@use './blocks/input-form';
 @use './blocks/dropdown';
-@use './blocks/hero';
-@use './blocks/search-form';
-@use './blocks/popular';
 @use './blocks/tool-card';
+@use './blocks/header';
+@use './blocks/hero';
+@use './blocks/popular';
 @use './blocks/trusted-brands';
 @use './blocks/new-tools';
 @use './blocks/team';
 @use './blocks/member';
+@use './blocks/join-us';

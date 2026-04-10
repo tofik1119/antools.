@@ -59,6 +59,19 @@
       }
    }
 
+   &__search-form {
+      background-color: var(--color-form);
+      position: relative;
+
+      &::before {
+         content: url(../../icons/search-icon.png);
+         position: relative;
+         align-self: center;
+         height: rem(25);
+         width: auto;
+      }
+   }
+
    &-socials-list {
       display: flex;
       gap: rem(8);
