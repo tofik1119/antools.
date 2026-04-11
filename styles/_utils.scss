@@ -27,7 +27,11 @@
 }
 
 .text--ascent {
-   color: var(--color-text-ascent);
+   color: var(--color-ascent);
+
+   @include hover {
+      color: var(--color-text-ascent);
+   }
 }
 
 .icon--transparent {

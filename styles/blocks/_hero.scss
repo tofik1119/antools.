@@ -34,12 +34,6 @@
       }
    }
 
-   &-title {
-      span {
-         color: var(--color-ascent);
-      }
-   }
-
    &-description {
       max-width: rem(500);
    }
@@ -60,7 +54,6 @@
    }
 
    &__search-form {
-      background-color: var(--color-form);
       position: relative;
 
       &::before {

@@ -60,9 +60,11 @@
    &__item {
       justify-self: center;
 
-      &:hover .trusted-brands__link {
-         filter: none;
-         opacity: 1;
+      @include hover {
+         .trusted-brands__link {
+            filter: none;
+            opacity: 1;
+         }
       }
    }
 }
