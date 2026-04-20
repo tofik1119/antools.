@@ -32,23 +32,27 @@
       }
    }
 
-   &__menu-button {
-      background-color: transparent;
-      border: none;
-      padding: 0 0;
+   &__menu-item {
+      position: relative;
    }
 
-   &__auth-menu-list {
+   &__menu-link {
+      padding: rem(6) 0;
+      background-color: transparent;
+      border: none;
+   }
+
+   &__authorization-menu-list {
       display: flex;
       flex-direction: row;
       column-gap: rem(40);
       align-items: center;
    }
 
-   &__auth-menu-button--transparent {
+   &__authorization-menu-button--transparent {
       background-color: transparent;
       border: none;
       font-weight: 600;
-            padding: 0 0;
+      padding: 0 0;
    }
 }

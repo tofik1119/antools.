@@ -1,21 +1,26 @@
 @use '/styles/helpers/' as *;
 
-.dropdown-button {
+.dropdown__menu-button {
    position: relative;
 }
 
-.dropdown-menu {
+.dropdown__menu {
    font-size: rem(14);
    position: absolute;
+   transform: translateX(-50%);
+   left: 50%;
    top: calc(100% + rem(14));
-   min-width: 100%;
-
+   
    background: var(--color-form);
    border-radius: var(--border-radius-medium);
 
    display: none;
    flex-direction: column;
    row-gap: rem(4);
+
+   &--is-open {
+      display: flex;
+   }
 
    @include gradient-border(
    2,
@@ -42,10 +47,6 @@
       @include hover {
          background-color: #333A40;
       }
-   }
-
-   &.is-open {
-      display: flex;
    }
 }
 

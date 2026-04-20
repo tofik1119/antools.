@@ -73,6 +73,10 @@
    &-social-link {
       padding: rem(12);
       filter: brightness(0) invert(1);
+
+      @include hover {
+         filter: none;
+      }
    }
 
    &-banner {
