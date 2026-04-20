@@ -5,8 +5,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>antools.</title>
    <link rel="shortcut icon" href="/antools./assets/logo-15RLVfEd.png" type="image/x-icon">
-  <script type="module" crossorigin src="/antools./assets/index-C0tfQdmG.js"></script>
-  <link rel="stylesheet" crossorigin href="/antools./assets/index-p7NamFPF.css">
+  <script type="module" crossorigin src="/antools./assets/index-CR8hQk2U.js"></script>
+  <link rel="stylesheet" crossorigin href="/antools./assets/index-DnRRihCF.css">
 </head>
 <body>
 <header class="header container">
@@ -19,19 +19,21 @@
          <li class="header__menu-item">
             <a href="#" class="header__menu-link">Home</a>
          </li>
-         <li class="header__menu-item dropdown-button"> 
+         <li class="header__menu-item"> 
             <!-- впрос dropdown-button или в button-->
-            <button class="header__menu-button">Categories
+            <button class="header__menu-link dropdown__menu-button">Categories
                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.75 0.75L5.25 5.25L9.75 0.75" stroke="white" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                </svg>
             </button>
-               <div class="dropdown-menu">
-                  <a href="#">Category1111111</a>
-                  <a href="#">Category</a>
-                  <a href="#">Category</a>
-                  <a href="#">Category</a>
-               </div>
+
+            <div class="dropdown__menu">
+               <a href="#">Category1111111</a>
+               <a href="#">Category</a>
+               <a href="#">Category</a>
+               <a href="#">Category</a>
+            </div>
+
          </li>
          <li class="header__menu-item">
             <a href="#" class="header__menu-link">My Collections</a>
@@ -42,13 +44,13 @@
       </ul>
    </nav>
 
-   <div class="header__auth-menu">
-      <ul class="header__auth-menu-list">
-         <li class="header__auth-menu-item">
-            <button class="header__auth-menu-button--transparent">Login</button>
+   <div class="header__authorization-menu">
+      <ul class="header__authorization-menu-list">
+         <li class="header__authorization-menu-item">
+            <button class="header__authorization-menu-button--transparent" data-target=".authorization--login">Login</button>
          </li>
-         <li class="header__auth-menu-list">
-            <button class="header__auth-menu-button button">Sign Up</button>
+         <li class="header__authorization-menu-list">
+            <button class="header__authorization-menu-button button" data-target=".authorization--register">Sign Up</button>
          </li>
       </ul>
    </div>
@@ -178,7 +180,7 @@
                         </button>
                      </div>
                      <div class="tool-card__secondary-actions">
-                        <a href="http://visual-studio-code.com" target="_blank" rel="noopener noreferrer">Visit</a>
+                        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visit</a>
                      </div>
                   </div>
                </div>
@@ -330,7 +332,7 @@
                         </button>
                      </div>
                      <div class="tool-card__secondary-actions">
-                        <a href="http://figma.com" target="_blank" rel="noopener noreferrer">Visit</a>
+                        <a href="http://zeplin.com" target="_blank" rel="noopener noreferrer">Visit</a>
                      </div>
                   </div>
                </div>
@@ -357,7 +359,7 @@
                         </button>
                      </div>
                      <div class="tool-card__secondary-actions">
-                        <a href="http://sketch.com" target="_blank" rel="noopener noreferrer">Visit</a>
+                        <a href="https://www.jetbrains.com/phpstorm/" target="_blank" rel="noopener noreferrer">Visit</a>
                      </div>
                   </div>
                </div>
@@ -384,7 +386,7 @@
                         </button>
                      </div>
                      <div class="tool-card__secondary-actions">
-                        <a href="http://visual-studio-code.com" target="_blank" rel="noopener noreferrer">Visit</a>
+                        <a href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener noreferrer">Visit</a>
                      </div>
                   </div>
                </div>
@@ -411,7 +413,7 @@
                         </button>
                      </div>
                      <div class="tool-card__secondary-actions">
-                        <a href="http://notion.com" target="_blank" rel="noopener noreferrer">Visit</a>
+                        <a href="https://procreate.com/" target="_blank" rel="noopener noreferrer">Visit</a>
                      </div>
                   </div>
                </div>
@@ -431,7 +433,7 @@
       <div class="team__body">
          <div class="team__member member">
             <div class="member__photo-wrapper">
-               <img src="/antools./assets/david-suarez-D8Knft1O.png" alt="" class="member__photo">
+               <img src="/antools./assets/david-suarez-D8Knft1O.png" alt="" class="member__photo" loading="lazy">
                <div class="member__photo-wrapper--backdrop-bliks"></div>
             </div>
             <div class="member__info">
@@ -505,5 +507,47 @@
 
    </div>
 </footer>
+
+<div class="overlay"></div>
+
+<div class="authorization authorization--login">
+   <div class="authorization__header">
+      <h2 class="authorization__title">Login</h2>
+      <p class="authorization__description">Lorem ipsum dolor sit amet, consectetur.</p>
+   </div>
+
+   <form class="authorization__form">
+      <input type="email" class="authorization__input input-form" placeholder="Enter your email...">
+      <input type="password" class="authorization__input input-form" placeholder="Enter your password...">
+      <button class="button authorization__submit">Login</button>
+   </form>
+
+   <div class="authorization__footer">
+      <p>Don't have an account?
+         <span class="text--ascent js-open-register">Register</span>
+      </p>
+   </div>
+</div>
+
+<div class="authorization authorization--register">
+   <div class="authorization__header">
+      <h2 class="authorization__title">Sign In</h2>
+      <p class="authorization__description">Lorem ipsum dolor sit amet, consectetur.</p>
+   </div>
+
+   <form class="authorization__form">
+      <input type="email" class="authorization__input input-form" placeholder="Enter your email...">
+      <input type="password" class="authorization__input input-form" placeholder="Enter your password...">
+      <input type="password" class="authorization__input input-form" placeholder="Confirm your password...">
+      <button class="button authorization__submit">Sign In</button>
+   </form>
+
+   <div class="authorization__footer">
+      <p>Already have an account?
+         <span class="text--ascent js-open-login">Login</span>
+      </p>
+   </div>
+</div>
+
 </body>
 </html>
